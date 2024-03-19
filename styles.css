@@ -179,7 +179,7 @@ main {
 /* ------page__main-block----------------------------- */
 
 .page__main-block {
-	min-height: 900px;
+	/* min-height: 900px; */
 }
 
 .main-block {
@@ -189,7 +189,7 @@ main {
 
 .main-block__body {
 	padding: 0px 0px 65px 0px;
-	min-height: 900px;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -214,7 +214,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 160px;
-	/* padding: 0px 0px 160px 0px; */
 }
 
 .information__menu {
@@ -344,8 +343,6 @@ main {
 
 
 
-
-
 .information__assortment {
 	display: flex;
 }
@@ -402,7 +399,6 @@ main {
 
 .page__slider {
 	position: relative;
-	/* min-height: 1000px; */
 	z-index: 0;
 }
 
@@ -415,7 +411,7 @@ main {
 ._container {}
 
 .slider__body {
-	min-height: 1000px;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -507,13 +503,20 @@ main {
 
 /* ---page__panorama--------------- */
 
-.page__panorama {
+.panorama {
 	position: relative;
 	z-index: 0;
 }
 
 .panorama__body {
-	height: 1000px;
+	height: 100vh;
+
+}
+
+/* ---page__car-interior--------------- */
+
+.car-interior__body {
+	height: 100vh;
 }
 
 /* ------------FOOTER------------------ */
