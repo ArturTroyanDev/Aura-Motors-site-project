@@ -86,6 +86,11 @@ main {
 }
 
 .title {
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.subtitle {
 	font-size: 32px;
 	font-weight: 500;
 	/* line-height: 39px; */
@@ -506,6 +511,7 @@ main {
 .panorama {
 	position: relative;
 	z-index: 0;
+	
 }
 
 .panorama__body {
@@ -515,8 +521,81 @@ main {
 
 /* ---page__car-interior--------------- */
 
+/* .page__car-interior {
+	padding: 30px 0px 60px 0px;
+} */
+
 .car-interior__body {
 	height: 100vh;
+}
+
+/* ----page__in-stock------------ */
+
+.page__in-stock {
+	padding: 120px 0px 0px 0px;
+	height: 100vh;
+}
+
+.in-stock__title {
+	margin: 0px 0px 60px 0px;
+}
+
+.in-stock__list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.in-stock__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 30px;
+	border-radius: 30px;
+
+	background-color: #fff;
+	color: #000;
+}
+
+.in-stock__item-model {
+	display: flex;
+	align-items: center;
+	/* padding: 0px 228px 0px 0px; */
+	width: 28%;
+}
+
+.in-stock__item-model b {
+	padding: 0px 5px 0px 0px;
+}
+
+.in-stock__subitem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 36%;
+}
+
+.in-stock__price b {
+	padding: 0px 0px 0px 20px;
+}
+
+.in-stock__item-model img {
+	margin: 0px 10px 0px 0px;
+}
+.stock__price {
+	display: flex;
+	align-items: center;
+}
+.in-stock__order {
+	display: flex;
+	align-items: center;
+	width: 28%;
+	justify-content: space-between;
+}
+.in-stock__btn {
+	border: 1px solid rgb(0, 0, 0);
+
 }
 
 /* ------------FOOTER------------------ */
