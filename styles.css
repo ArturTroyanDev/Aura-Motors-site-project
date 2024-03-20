@@ -533,7 +533,6 @@ main {
 
 .page__in-stock {
 	padding: 120px 0px 0px 0px;
-	height: 100vh;
 }
 
 .in-stock__title {
@@ -566,7 +565,7 @@ main {
 }
 
 .in-stock__item-model b {
-	padding: 0px 5px 0px 0px;
+	padding: 0px 4px 0px 0px;
 }
 
 .in-stock__subitem {
