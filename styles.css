@@ -531,22 +531,22 @@ main {
 
 /* ----page__in-stock------------ */
 
-.page__in-stock {
-	padding: 120px 0px 0px 0px;
+.page__stock {
+	padding: 120px 0px 120px 0px;
 }
 
-.in-stock__title {
+.stock__title {
 	margin: 0px 0px 60px 0px;
 }
 
-.in-stock__list {
+.stock__list {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 	font-size: 20px;
 	font-weight: 500;
 }
-.in-stock__item {
+/* .stock__item {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -557,48 +557,87 @@ main {
 	color: #000;
 }
 
-.in-stock__item-model {
+.stock__item-model {
 	display: flex;
 	align-items: center;
-	/* padding: 0px 228px 0px 0px; */
 	width: 28%;
 }
 
-.in-stock__item-model b {
+.stock__item-model b {
 	padding: 0px 4px 0px 0px;
 }
 
-.in-stock__subitem {
+.stock__subitem {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 36%;
 }
 
-.in-stock__price b {
+.stock__price b {
 	padding: 0px 0px 0px 20px;
 }
 
-.in-stock__item-model img {
+.stock__item-model img {
 	margin: 0px 10px 0px 0px;
 }
 .stock__price {
 	display: flex;
 	align-items: center;
 }
-.in-stock__order {
+.stock__order {
 	display: flex;
 	align-items: center;
 	width: 28%;
 	justify-content: space-between;
 }
-.in-stock__btn {
+.stock__btn {
 	border: 1px solid rgb(0, 0, 0);
+
+} */
+
+.stock__item {
+	display: grid;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background-color: #fff;
+	color: #000;
+	grid-template-columns: minmax(40px, max-content) minmax(205px, auto) 
+	minmax(50px, 86px) minmax(40px, 75px)
+	minmax(230px, 265px) minmax(70px, 190px)
+	minmax(40px, 60px) minmax(212px, 230px)
+	minmax(40px, 105px);
+	gap: 10px;
+	align-items: center; 
 
 }
 
-/* ------------FOOTER------------------ */
+.big-font {
+	font-weight: 700;
+}
 
+.model {
+	display: grid;
+	grid-template-columns: minmax(100px, max-content) minmax(240px, max-content);
+}
+
+.price {
+	display: grid;
+	grid-template-columns: 145px 85px;
+}
+
+.stock__btn {
+	border: 2px solid #00000083;
+
+}
+
+.stock__describe {
+	padding: 0px;
+}
+
+/* ------------FOOTER------------------ */
+s
 .footer {
 	font-size: 14px;
 }

@@ -15,6 +15,7 @@
 <!-- подумать как правильно сделать кнопки ссылками или кнопками -->
 <!-- сделать миксы для секций с фоновой картинкой -->
 <!-- сделать миксы для секций с вертикальным слайдером -->
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -284,48 +285,107 @@
                     </div>
                 </div>
             </section>
-            <section class="page__in-stock in-stock">
-                <div class="in-stock__container _container">
-                    <div class="in-stock__title title">В наявності GENESISG80</div>
-                    <div class="in-stock__body">
-                        <div class="in-stock__list">
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                            <div class="in-stock__item">
-                                <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
-                                <div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
-                                <div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div>
-                            </div>
-                        </div>
+
+            <!-- grid -->
+
+            <section class="page__stock stock">
+                <div class="stock__container _container">
+                    <div class="stock__title title">В наявності GENESISG80</div>
+                    <div class="stock__body">
+                        <ul class="stock__list">
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / deluxe
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/white-ellipse.png">
+                                <div class="price">2 233 875 грн<div class="big-font">$57 500</div>
+                                </div>
+                                <div>Київ</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / deluxe
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/black-ellipse.png">
+                                <div class="price">2 233 875 грн<div class="big-font">$57 500</div>
+                                </div>
+                                <div>Дніпро</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / deluxe
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/black-ellipse.png">
+                                <div class="price">2 233 875 грн<div class="big-font">$57 500</div>
+                                </div>
+                                <div>Полтава</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / Ultimate
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/red-ellipse.png">
+                                <div class="price">2 637 915 грн<div class="big-font">$67 900</div>
+                                </div>
+                                <div>Київ</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / Ultimate
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/white-ellipse.png">
+                                <div class="price">2 637 915 грн<div class="big-font">$67 900</div>
+                                </div>
+                                <div>Київ</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                            <li class="stock__item">
+                                <img src="images/main-block/page__stock/mini-logo-genesis.png" alt="">
+                                <div class="model">
+                                    <div class="big-font">GENESIS</div> / Ultimate
+                                </div>
+                                <div>2023</div>
+                                <img src="images/main-block/page__stock/yellow-ellipse.png">
+                                <div class="price">2 637 915 грн<div class="big-font">$67 900</div>
+                                </div>
+                                <div>Київ</div>
+                                <button> <img src="images/main-block/bookmark.png" alt=""
+                                        class="stock__bookmark"></button>
+                                <button class="stock__btn button">Замовити</button>
+                                <button class="stock__describe button">Детальніше</button>
+                            </li>
+                        </ul>
                     </div>
+                </div>
                 </div>
             </section>
         </main>
@@ -403,3 +463,7 @@
 <script src="script.js"></script>
 
 </html>
+<!-- 
+ <div class="in-stock__item-model"><img src="images/main-block/page__in-stock/mini-logo-genesis.png" alt=""> <b>GENESIS</b> / Deluxe</div>
+<div class="in-stock__subitem">2024 <img src="images/main-block/page__in-stock/white-ellipse.png" alt=""><div class="in-stock__price">2 233 875 грн <b>$57 500</b></div>  Київ</div>
+<div class="in-stock__order"> <img src="images/main-block/bookmark.png" alt="" class="in-stock__bookmark"> <div class="in-stock__btn button">Замовити</div>Детальніше</div> -->
