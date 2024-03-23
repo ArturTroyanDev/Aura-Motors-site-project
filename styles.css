@@ -660,11 +660,17 @@ main {
 	display: grid;
 	align-items: center;
 	row-gap: 36px;
+	/* column-gap: 28px; */
+
 	grid-template-areas:
 		"method phone e-mail viber telegram"
 		"button button agreement agreement agreement";
 	grid-template-columns: repeat(auto);
 	grid-template-rows: 1fr 2fr;
+}
+
+.submission__method label {
+	padding: 0px 29px 0px 0px
 }
 
 .feedback__submission label {
@@ -682,7 +688,6 @@ main {
 
 .submission__btn {
 	border: 1px solid #000;
-	/* padding: 13px 4px; */
 	width: 228px; 
 	height: 46px; 
 }
