@@ -625,7 +625,7 @@ main {
 		"send-message send-message";
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 46px 46px;
-	
+
 }
 
 .feedback__body input {
@@ -658,19 +658,22 @@ main {
 	margin: 30px 0px 0px auto;
 	width: 40%;
 	display: grid;
-	align-items: center;
+	/* align-items: center; */
 	row-gap: 36px;
-	/* column-gap: 28px; */
+	/* column-gap: 28px;
 
 	grid-template-areas:
 		"method phone e-mail viber telegram"
 		"button button agreement agreement agreement";
-	grid-template-columns: repeat(auto);
-	grid-template-rows: 1fr 2fr;
+	grid-template-columns: repeat(auto); */
+
+	/* grid-template-rows: 1fr 2fr; */
 }
 
-.submission__method label {
-	padding: 0px 29px 0px 0px
+.submission__checkboxes {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	column-gap: 30px
 }
 
 .feedback__submission label {
@@ -684,15 +687,26 @@ main {
 	width: 20px;
 	height: 20px;
 	accent-color: rgb(246, 211, 117);
+
+}
+
+.submission__controls {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
 }
 
 .submission__btn {
+	margin: 0px 30px 0px 0px;
+
 	border: 1px solid #000;
-	width: 228px; 
-	height: 46px; 
 }
 
-.submission__method {
+.submission__agreement {
+	font-size: 14px;
+}
+
+/* .submission__method {
 	grid-area: method
 }
 
@@ -710,24 +724,13 @@ main {
 
 .submission__telegram {
 	grid-area: telegram;
-}
+} */
 
 .submission__btn {
 	display: grid;
-	grid-area: button;
+	/* grid-area: button; */
 	/* margin: 0px 30px 0px 0px; */
 }
-
-.submission__agreement {
-	grid-area: agreement;
-	font-size: 14px;
-	/* padding: 0px 30px 0px 0px; */
-}
-
-
-
-
-
 
 
 /* .feedback__submission label {

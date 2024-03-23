@@ -391,20 +391,28 @@
                     <span class="feedback__subtitle">Якщо у вас виникли питання чи потрібна <br>
                         додаткова інформація, будь ласка, <br> зв'яжіться з нами. Наша команда експертів <br>готова
                         надати всю необхідну підтримку та <br>поради</span>
-                    <div class="feedback__body">
+                    <form class="feedback__body">
                         <input class="feedback__name" type="Ім'я" placeholder="name">
                         <input class="feedback__phone" type="Номер телефону" placeholder="phone">
                         <input class="feedback__message" type="Ваше повідомлення" placeholder="comment">
                         <div class="feedback__submission submission">
-                            <div class="submission__method">Мені зручно:</div>
-                            <label class="submission__phone" for=""><input type="checkbox">Телефоном</label>
-                            <label class="submission__e-mail" for=""><input type="checkbox">E-mail</label>
-                            <label class="submission__viber" for=""><input type="checkbox">Viber</label>
-                            <label class="submission__telegram" for=""><input type="checkbox">Telegram</label>
-                            <button class="submission__btn button">Відправити</button>
-                            <span class="submission__agreement">Натискаючи "Відправити" ви підтверджуєте <br> свою згоду на обробку персональних даних</span>
+                            <div class="submission__checkboxes">
+                                <div class="submission__method">Мені зручно:</div>
+                                <label class="submission__phone"><input type="checkbox">Телефоном</label>
+                                <label class="submission__e-mail"><input type="checkbox">E-mail</label>
+                                <label class="submission__viber"><input type="checkbox">Viber</label>
+                                <label class="submission__telegram"><input type="checkbox">Telegram</label>
+                            </div>
+
+                            <div class="submission__controls">
+                                <button class="submission__btn button">Відправити</button>
+                                <span class="submission__agreement">Натискаючи "Відправити" ви підтверджуєте <br> свою
+                                    згоду
+                                    на обробку персональних даних</span>
+                            </div>
+
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
     </div>
