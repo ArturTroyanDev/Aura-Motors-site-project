@@ -628,10 +628,14 @@ main {
 
 }
 
-.feedback__body input {
+.feedback__body input{
 	width: 100%;
 	border-bottom: 1px solid #00000083;
+}
 
+.feedback__body textarea{
+	width: 100%;
+	border-bottom: 1px solid #00000083;
 }
 
 .feedback__name {
@@ -660,6 +664,8 @@ main {
 	display: grid;
 	/* align-items: center; */
 	row-gap: 36px;
+	/* grid-template-columns: 1fr 1fr; */
+	/* grid-template-rows: 1fr 2fr; */
 	/* column-gap: 28px;
 
 	grid-template-areas:
@@ -667,7 +673,7 @@ main {
 		"button button agreement agreement agreement";
 	grid-template-columns: repeat(auto); */
 
-	/* grid-template-rows: 1fr 2fr; */
+	/* grid-template-rows: 1fr 1fr; */
 }
 
 .submission__checkboxes {
@@ -676,7 +682,7 @@ main {
 	column-gap: 30px
 }
 
-.feedback__submission label {
+.submission__checkboxes > div {
 	display: grid;
 	grid-template-columns: max-content max-content;
 	align-items: center;

@@ -387,34 +387,46 @@
             </section>
             <section class="page__feedback-form feedback">
                 <div class="feedback__container _container">
-                    <div class="feedback__title title">Зв'язатися з нами</div>
-                    <span class="feedback__subtitle">Якщо у вас виникли питання чи потрібна <br>
-                        додаткова інформація, будь ласка, <br> зв'яжіться з нами. Наша команда експертів <br>готова
-                        надати всю необхідну підтримку та <br>поради</span>
+                    <h3 class="feedback__title title">Зв'язатися з нами</h3>
+                    <div class="feedback__text">
+                        <p>Якщо у вас виникли питання чи потрібна <br>
+                            додаткова інформація, будь ласка, <br> зв'яжіться з нами. Наша команда експертів <br>готова
+                            надати всю необхідну підтримку та <br>поради</р>
+                    </div>
+
                     <form class="feedback__body">
-                        <input class="feedback__name" type="Ім'я" placeholder="name">
-                        <input class="feedback__phone" type="Номер телефону" placeholder="phone">
-                        <input class="feedback__message" type="Ваше повідомлення" placeholder="comment">
+                        <!-- <div class="feedback__input-wrapper"></div> -->
+
+                        <input class="feedback__name" type="name" placeholder="Ім'я">
+                        <input class="feedback__phone" type="phone" placeholder="Номер телефону">
+
+                        <!-- <div class="feedback__textarea-wrapper"></div> -->
+                        <textarea class="feedback__message" type="comment" placeholder="Ваше повідомлення" name="" id=""
+                            cols="30" rows="10"></textarea>
+
+
                         <div class="feedback__submission submission">
                             <div class="submission__checkboxes">
                                 <div class="submission__method">Мені зручно:</div>
-                                <label class="submission__phone"><input type="checkbox">Телефоном</label>
-                                <label class="submission__e-mail"><input type="checkbox">E-mail</label>
-                                <label class="submission__viber"><input type="checkbox">Viber</label>
-                                <label class="submission__telegram"><input type="checkbox">Telegram</label>
+                                <div class="submission__phone"><input type="checkbox">Телефоном</div>
+                                <div class="submission__e-mail"><input type="checkbox">E-mail</div>
+                                <div class="submission__viber"><input type="checkbox">Viber</div>
+                                <div class="submission__telegram"><input type="checkbox">Telegram</div>
                             </div>
-
                             <div class="submission__controls">
                                 <button class="submission__btn button">Відправити</button>
-                                <span class="submission__agreement">Натискаючи "Відправити" ви підтверджуєте <br> свою
-                                    згоду
-                                    на обробку персональних даних</span>
+                                <div class="submission__agreement">
+                                    <p>Натискаючи "Відправити" ви підтверджуєте <br>
+                                        свою
+                                        згоду
+                                        на обробку персональних даних</p>
+                                </div>
                             </div>
-
                         </div>
                     </form>
                 </div>
             </section>
+            <section></section>
     </div>
     </main>
     <footer class="footer">
